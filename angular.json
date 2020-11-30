@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularMaterialDemo": {
+    "ngxAutocomplite": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angularMaterialDemo",
+            "outputPath": "dist/ngxAutocomplite",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -67,18 +67,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angularMaterialDemo:build"
+            "browserTarget": "ngxAutocomplite:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angularMaterialDemo:build:production"
+              "browserTarget": "ngxAutocomplite:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angularMaterialDemo:build"
+            "browserTarget": "ngxAutocomplite:build"
           }
         },
         "test": {
@@ -115,15 +115,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angularMaterialDemo:serve"
+            "devServerTarget": "ngxAutocomplite:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angularMaterialDemo:serve:production"
+              "devServerTarget": "ngxAutocomplite:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angularMaterialDemo"
+  "defaultProject": "ngxAutocomplite"
 }
