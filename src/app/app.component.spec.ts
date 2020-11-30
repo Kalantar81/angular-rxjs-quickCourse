@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ngxAutocomplite'`, () => {
+  it(`should have as title 'angularMaterialDemo'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('ngxAutocomplite');
+    expect(app.title).toEqual('angularMaterialDemo');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to ngxAutocomplite!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angularMaterialDemo!');
   });
 });
