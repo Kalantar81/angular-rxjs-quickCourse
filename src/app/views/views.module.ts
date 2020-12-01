@@ -6,6 +6,8 @@ import { BodyFooterComponent } from './body-footer/body-footer.component';
 import { HeaderComponent } from './view-parts/header/header.component';
 import { BodyComponent } from './view-parts/body/body.component';
 import { FooterComponent } from './view-parts/footer/footer.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { AppRoutingModule } from '../app-routing.module';
 
 
 
@@ -19,6 +21,8 @@ import { FooterComponent } from './view-parts/footer/footer.component';
     FooterComponent
   ],
   imports: [
+    BrowserModule,
+    AppRoutingModule,
     CommonModule
   ],
   exports: [

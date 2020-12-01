@@ -1,0 +1,19 @@
+<div class="intro-container">
+  <div *ngIf="showBtn">
+    <button
+      mat-button
+      color="primary"
+      class="button-design"
+      (click)="click()">
+        Primary
+    </button>
+  </div>
+  <div style="padding-top: 20px;">
+    <mat-form-field  [style.width.px]=327>
+      <mat-label>Peope</mat-label>
+      <input
+       matInput
+       value = "{{result}}">
+    </mat-form-field>
+  </div>
+</div>

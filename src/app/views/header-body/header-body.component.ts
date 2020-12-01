@@ -12,7 +12,7 @@ export class HeaderBodyComponent implements OnInit {
 
   @HostListener('window:resize', ['$event'])
     onResize(event?) {
-       this.screenHeight = window.innerHeight - 18;
+       this.screenHeight = window.innerHeight - 25;
        this.screenWidth = window.innerWidth  - 15;
     }
 

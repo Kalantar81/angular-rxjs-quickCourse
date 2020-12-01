@@ -10,6 +10,7 @@ import { ComponentsModule } from './components/components.module';
 import { DirectivesModule } from './directives/directives.module';
 import { GlobalServicesModule } from './global-services/global-services.module';
 import { PipesModule } from './pipes/pipes.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { PipesModule } from './pipes/pipes.module';
   ],
   imports: [
     BrowserModule,
+    AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
