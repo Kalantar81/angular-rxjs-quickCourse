@@ -1,1 +1,59 @@
-<p>streams works!</p>
+<div class="streams-container">
+  <div class="stream-example-container">
+    <div *ngIf="showBtn">
+      <button
+        mat-button
+        color="primary"
+        class="button-design"
+        (click)="firstStreamBtn()">
+          first stream
+      </button>
+    </div>
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>operator of()</mat-label>
+        <input
+         matInput
+         value = "{{firstStream}}">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="stream-example-container">
+    <div *ngIf="showBtn">
+      <button
+        mat-button
+        color="primary"
+        class="button-design"
+        (click)="secondStreamBtn()">
+          second stream
+      </button>
+    </div>
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>operator from()</mat-label>
+        <input
+         matInput
+         value = "{{secondStream}}">
+      </mat-form-field>
+    </div>
+  </div>
+  <div class="stream-example-container">
+    <div *ngIf="showBtn">
+      <button
+        mat-button
+        color="primary"
+        class="button-design"
+        (click)="thirdStreamBtn()">
+          third stream
+      </button>
+    </div>
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>observable stream</mat-label>
+        <input
+         matInput
+         value = "{{thirdStream}}">
+      </mat-form-field>
+    </div>
+  </div>
+</div>

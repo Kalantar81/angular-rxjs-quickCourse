@@ -1,1 +1,92 @@
-<p>subject works!</p>
+<div class="subject-container">
+  <div class="subject-example-container">
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>subject</mat-label>
+        <input
+         matInput
+         value = "{{subjectValue}}"
+         readonly>
+      </mat-form-field>
+    </div>
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>new value for subject</mat-label>
+        <input
+         matInput
+         [(ngModel)] = "updateSubjectValue">
+      </mat-form-field>
+    </div>
+    <div>
+      <button
+        mat-button
+        color="primary"
+        class="button-design"
+        (click)="subjectBtn()">
+          update subject
+      </button>
+    </div>
+  </div>
+
+  <div class="subject-example-container">
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>behavior subject</mat-label>
+        <input
+         matInput
+         value = "{{behaviorSubjectValue}}"
+         readonly>
+      </mat-form-field>
+    </div>
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>update behavior subject</mat-label>
+        <input
+         matInput
+         [(ngModel)] = "updateBehaviorSubjectValue">
+      </mat-form-field>
+    </div>
+    <div>
+      <button
+        mat-button
+        color="primary"
+        class="button-design"
+        (click)="behaviorSubjectBtn()">
+          update behavior subject
+      </button>
+    </div>
+  </div>
+
+  <div class="subject-example-container">
+    <div style="padding-top: 20px;">
+      <mat-form-field>
+        <mat-label>replay subject</mat-label>
+        <input
+         matInput
+         value = "{{replaySubjectValue}}"
+         readonly>
+      </mat-form-field>
+    </div>
+    <mat-form-field>
+      <mat-label>update replay subject</mat-label>
+        <input
+         matInput
+         [(ngModel)]="updateReplaySubjectValue">
+      </mat-form-field>
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="replaySubjectBtn()">
+          replay subject
+        </button>
+      </div>
+      <div style="border: 1px solid gray; background-color: bisque; margin-top: 10px; width: 150px;">
+        <div *ngFor="let value of replaySubjectArray">
+          <div style="margin: 5px;">{{value}}</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
