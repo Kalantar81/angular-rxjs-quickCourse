@@ -1,0 +1,195 @@
+<div class="operators-container">
+  <div class="operators-row-container">
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForMapBtn()">
+            stream for map
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>map()</mat-label>
+          <input
+           matInput
+           value = "{{streamForMapValue}}">
+        </mat-form-field>
+        <div class="text" style="width: 200px;">
+          value => value * 10
+        </div>
+      </div>
+    </div>
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForFilterBtn()">
+            stream for filter
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>filter()</mat-label>
+          <input
+           matInput
+           value = "{{streamForFilterValue}}">
+        </mat-form-field>
+        <div class="text" style="width: 200px;">
+          v => v % 2 === 0
+        </div>
+      </div>
+    </div>
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForTakeBtn()">
+            stream for take
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>enter number of values</mat-label>
+          <input
+           matInput
+           number
+           [(ngModel)] = "takeVal">
+        </mat-form-field>
+        <div *ngIf="takeVal" class="text" style="width: 200px;">
+          {{streamForTakeValue}}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="operators-row-container">
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForTakeLastBtn()">
+            stream for takeLast
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>enter number of values</mat-label>
+          <input
+           matInput
+           number
+           [(ngModel)] = "takeLast">
+        </mat-form-field>
+        <div *ngIf="takeLast" class="text" style="width: 200px;">
+          [ {{streamTakeLastArr}} ]
+        </div>
+      </div>
+    </div>
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForTakeWhileBtn()">
+            stream for takeWhile
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>takeWhile()</mat-label>
+          <input
+           matInput
+           value = "{{streamForTakeWhileValue}}">
+        </mat-form-field>
+        <div class="text" style="width: 200px;">
+          v => v < 5
+        </div>
+      </div>
+    </div>
+
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForScanBtn()">
+            stream for scan
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>scan()</mat-label>
+          <input
+           matInput
+           value = "{{streamForScan}}">
+        </mat-form-field>
+        <div class="text" style="width: 200px;">
+          [ {{streamForScanArr}} ]
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="operators-row-container">
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForReduceBtn()">
+            stream for reduce
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>reduce()</mat-label>
+          <input
+           matInput
+           value = "{{streamForReduce}}">
+        </mat-form-field>
+        <div
+          *ngIf="tapForReduce"
+          class="text"
+          style="width: 200px;">
+            {{tapForReduce}}
+        </div>
+      </div>
+    </div>
+    <div  class="operator-cell">
+      <div>
+        <button
+          mat-button
+          color="primary"
+          class="button-design"
+          (click)="streamForSwitchMapBtn()">
+            stream for switchMap
+        </button>
+      </div>
+      <div style="padding-top: 20px;">
+        <mat-form-field>
+          <mat-label>switchMap()</mat-label>
+          <input
+           matInput
+           value = "{{switchMapFirstStreamValue}}">
+        </mat-form-field>
+        <div
+          *ngIf="switchMapSecondStreamValue"
+          class="text"
+          style="width: 200px;">
+            {{switchMapSecondStreamValue}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

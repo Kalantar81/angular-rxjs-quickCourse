@@ -8,6 +8,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '../material-module/material.module';
 import { StreamsComponent } from './streams/streams.component';
+import { OperatorsComponent } from './operators/operators.component';
 
 
 
@@ -15,7 +16,8 @@ import { StreamsComponent } from './streams/streams.component';
   declarations: [
     IntroComponent,
     SubjectComponent,
-    StreamsComponent
+    StreamsComponent,
+    OperatorsComponent
   ],
   imports: [
     BrowserModule,
